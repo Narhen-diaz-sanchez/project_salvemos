@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+
 /* Archivos de estilos para el index rgb(255, 192, 116)*/
 :root {
     --color1: rgb(1, 147, 124);
     --color2: rgb(146, 167, 54);
     --color3: rgb(187, 220, 47);
     --fondo: rgb(230, 245, 199);
-    --titulos: 33px;
-    --subtitulos: 20px;
+    --titulos: 3rem;
+    --subtitulos: 1.5rem;
     --margenes: 60px;
     --espacios: 10px;
     --espacios-contenido: 45px;
+    --txt-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -18,7 +21,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Kanit', sans-serif;
     background: var(--fondo);
 }
 
@@ -117,7 +120,7 @@ header {
     background: linear-gradient(to bottom,
             rgba(248, 176, 69, 0.466),
             rgba(69, 230, 155, 0.479),
-            rgb(1, 147, 124, .4)), url(images/mascota2.jpg);
+            rgb(1, 147, 124, .4)), url(../images/mascota2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -214,15 +217,16 @@ nav .enlaces a:hover {
 }
 
 .contenedor h3 {
-    font-size: var(--titulos);
+    font-size: 3rem;
     color: var(--color1);
     margin-bottom: var(--espacios);
+    
 }
 
 .contenedor p {
     font-size: var(--subtitulos);
-    font-weight: 300;
-    color: var(--color2);
+    color: var(--color3);
+    
 }
 
 .after::after {
@@ -266,11 +270,12 @@ nav .enlaces a:hover {
 }
 
 .about {
-    background: url(images/mascota7.jpg);
+    background: url(../images/mascota7.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: auto;
+    text-shadow: var(--txt-shadow);
 }
 
 .servicios {
@@ -279,16 +284,21 @@ nav .enlaces a:hover {
     justify-content: space-between;
     margin: auto;
     flex-wrap: wrap;
+    
 }
 
 .caja-servicios>h4 {
+    font-size: 2.5rem;
     margin-bottom: var(--espacios);
     color: var(--color1);
+    text-shadow: var(--txt-shadow) ;
 }
 
 .caja-servicios>p {
     text-align: center;
     color: var(--color3);
+    text-shadow: var(--txt-shadow);
+    font-size: var(--subtitulos);
 }
 
 .botones-work {
@@ -356,7 +366,7 @@ nav .enlaces a:hover {
 /* footer */
 
 footer {
-    background: url(images/mascota8.jpg);
+    background: url(../images/mascota8.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
