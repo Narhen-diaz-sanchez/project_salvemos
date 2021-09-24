@@ -103,7 +103,7 @@ nav .enlaces a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--color-primary);
+    background: var(--color1);
     z-index: -1;
     clip-path: var(--clip);
 }
