@@ -150,7 +150,7 @@ nav {
     width: 90%;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     height: inherit;
     overflow: hidden;
 }
