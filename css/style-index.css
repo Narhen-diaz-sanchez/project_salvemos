@@ -385,22 +385,44 @@ footer {
     ;
 }
 
-.iconos {
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    width: 100%;
-}
 
-.fab {
-    font-size: 60px;
-    color: var(--color2);
-    margin-bottom: var(--espacios);
+.footer__icon{
     display: inline-block;
+    font-size: 2rem;
+    margin: 0 30px;
+    text-decoration: none;
+    color: var(--color2);
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid ;
+    border-radius: 50%;
+    
 }
 
-footer p {
-    margin-top: var(--espacios);
+.footer__icon.fab{
+    line-height: 60px;
+}
+
+.footer__icon:hover{
+    background: var(--color2);
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer__link{
+    display: inline-block;
+    color: var(--color2);
+    margin-left:0;
+    margin-bottom: 15px;
+}
+
+.footer__link:hover{
+    text-shadow: var(--txt-shadow);
+}
+
+.footer__copy{
+    text-shadow: var(--txt-shadow);
 }
 
 @media screen and (max-width: 700px) {
